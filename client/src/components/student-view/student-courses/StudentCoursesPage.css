@@ -1,0 +1,74 @@
+.student-courses-page-container{
+  width: 100%;
+  min-height: 100vh;
+  margin-top: 100px;
+}
+.student-courses-page-container h1{
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 900;
+  color: #414040;
+
+}
+
+.courses-page-list{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding: 20px 30px;
+}
+
+
+
+.course-page-card{
+  width: 300px;
+  border-radius: 10px;
+  min-height: 60%;
+  background: rgb(249, 249, 249);
+  padding: 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  
+}
+.course-page-card img{
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.course-page-details{
+  margin-top: 10px;
+}
+.course-page-details h3{
+ color: rgb(58, 58, 58);
+}
+.course-page-details p{
+  margin: 5px;
+  font-size: 17px;
+}
+
+.start-course-btn{
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.start-course-btn:hover{
+  background-color: #0064cf;
+  
+}
+
+.purchaseSomething{
+  font-size: 30px;
+  font-weight: 900;
+  text-align: center;
+  margin-top: 40vh;
+}
+

@@ -1,0 +1,161 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  .course-progress-container {
+    min-height: 100vh;
+    width: 100%;
+    background: #1c1c1c;
+   
+  }
+  
+  .course-progress-body{
+     padding-top: 100px;
+     padding-left: 20px;
+     padding-right: 20px;
+     display: grid;
+     grid-template-columns: 2fr 1fr;
+     gap:10px
+     
+  }
+
+  .course-progress-left{
+    background-color: #000;
+    border-radius: 8px;
+    height: 80vh;
+    width: 100%;
+    padding: 10px 5px;
+  }
+
+  .course-progress-right{
+    max-height: 80vh;
+    background: #000;
+    border: 2px solid rgb(35, 35, 35);
+    padding: 10px;
+    border-radius: 8px;
+    color: white;
+    overflow-y: scroll;
+    
+  }
+  .course-progress-right h1{
+    font-weight: 50;
+  }
+
+  .course-progress-box,.course-progress-lecture-box{
+    height: 60px;
+    border: 2px solid gray;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 4px 6px;
+    cursor: pointer;
+
+  }
+  .lectureNumber{
+    display: flex;
+    justify-content: space-between;
+  }
+  .underline{
+    background: #a1a1a1;
+    padding: 3px 6px;
+    margin-top: 10px;
+    text-align: center;
+    border-radius: 8px;
+  }
+
+  .progress-bar {
+    width: 80%; /* Example for 80% progress */
+    background-color: #4caf50;
+    height: 10px;
+    border-radius: 5px;
+  }
+  
+
+  .titleAndIcon{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  /* Default lecture box styling */
+.course-progress-lecture-box {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Active lecture with green glowing border */
+.course-progress-lecture-box.active-lecture {
+  border-color: #4caf50;
+  
+  background-color: #2C2C2C;
+}
+
+/* Viewed lecture styling */
+.course-progress-lecture-box.viewed {
+  color: #4caf50;
+}
+
+/* Hover effect for better interactivity */
+.course-progress-lecture-box:hover {
+  border-color: #5b636b;
+  box-shadow: 0 0 10px 2px #2a3239;
+}
+
+
+  @media (max-width: 768px) {
+    .course-progress-body {
+      padding-top: 120px;
+    }
+  }
+  
+  @media (max-width: 978px) {
+    .course-progress-body {
+      grid-template-columns: 1fr; /* Single-column layout */
+      grid-template-rows: auto auto; /* Stacks items vertically */
+      /* gap: 40px; */
+    }
+  
+    .course-progress-left {
+      width: 100%; /* Full width for video player */
+    }
+  
+    .course-progress-right {
+      width: 100%; /* Full width for course-progress-right */
+      margin-top: 20px; /* Add some space between sections */
+    }
+  }
+
+  
+  @media (max-width: 978px) {
+    .course-progress-left{
+      max-height: 60vh;
+    }
+  }
+  @media (max-width: 875px) {
+    .course-progress-body{
+      gap:80px
+    }
+  }
+  @media (max-width: 810px) {
+    .course-progress-body{
+      gap:40px
+    }
+  }
+  @media (max-width: 768px) {
+    .course-progress-body{
+      gap:10px;
+    }
+  }
+  @media (max-width: 750px) {
+    .course-progress-body{
+      gap:0
+    }
+  }
+  

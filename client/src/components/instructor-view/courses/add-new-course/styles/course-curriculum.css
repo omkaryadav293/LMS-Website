@@ -1,0 +1,106 @@
+.course-curriculum-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  .add-lecture-btn {
+    background: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+
+  .add-and-bulk-upload{
+    display: flex;
+    justify-content: space-between;
+  }
+  .bulk-upload-input{
+    display: none;
+}
+  .lecture-container {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 5px;
+  }
+
+  .text-btn-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .lecture-container h3 {
+    margin: 0 0 10px;
+  }
+
+  .btns-container{
+    display: flex;
+    gap:15px
+  }
+  
+  .lecture-container input[type="text"] {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .switch-container {
+    margin-bottom: 10px;
+  }
+  
+  .switch-container label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .switch-container input[type="checkbox"] {
+    margin-right: 8px;
+  }
+
+  .videoPlayer{
+    display: flex;
+    gap:10px;
+    align-items: center;
+  }
+
+  .videoPlayer-btn-1, .videoPlayer-btn-2{
+   outline: none;
+   padding:8px;
+   background: gray;
+   color:white;
+   border-radius: 5px;
+   cursor: pointer;
+  }
+  .videoPlayer-btn-1:hover{
+    background-color: rgb(116, 116, 4);
+    
+  }
+  .videoPlayer-btn-2:hover{
+    background-color: rgb(171, 33, 33);
+  }
+  
+  @media (max-width: 600px ) {
+    .add-and-bulk-upload, .text-btn-container{
+       flex-direction: column;
+       width: fit-content;
+       
+    }
+    .add-and-bulk-upload{
+      margin-top: 10px; 
+    }
+    .btns-container{
+      margin-bottom: 10px;
+    }
+    .videoFile{
+        width: 100%;
+        
+    }
+  }

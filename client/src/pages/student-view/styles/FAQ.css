@@ -1,0 +1,42 @@
+.faq {
+    font-family: Arial, sans-serif;
+    color: #333;
+    padding: 2rem;
+  }
+  
+  .faq-header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .faq-header h1 {
+    color: #ff7043;
+    margin-top: 50px;
+  }
+  
+  .faq-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .faq-item {
+    border-bottom: 1px solid #ddd;
+    padding: 1rem 0;
+  }
+  
+  .faq-item h3 {
+    color: #ff8a65;
+    margin: 0;
+  }
+  
+  .faq-item p {
+    margin-top: 0.5rem;
+    line-height: 1.6;
+  }
+
+  @media (max-width : 768px) {
+    .faq-header h1 {
+        margin-top: 100px;
+    }
+  }
+  

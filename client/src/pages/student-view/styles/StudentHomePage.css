@@ -1,0 +1,11 @@
+/* div{
+    width:120vw;
+} */
+
+.thalapathy{
+    background-color: red;
+    height: 300px;
+    overflow-x: auto;
+    max-width: 100%;
+    white-space: nowrap;
+}

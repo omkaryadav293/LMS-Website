@@ -1,0 +1,185 @@
+.video-player-container {
+    position: relative;
+    width: 100%;
+    /* max-width: 800px; */
+    margin: auto;
+    background: #000;
+    height: 83%;
+  }
+  
+  .controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0 ;
+    padding-right: 65px;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    flex-wrap: wrap;
+    gap:15px;
+    padding-left: 32px;
+  }
+  
+  .timer {
+    flex: 1;
+    text-align: left;
+    font-size: 14px;
+  }
+
+  .playbackAndVolume{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .volume-control{
+    display: flex;
+    align-items: center;
+    
+  }
+
+  .playbackAndTimer{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .playback-controls button {
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 0 5px;
+  }
+  
+  .playback-speed select {
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+  }
+  
+  .volume-control input[type="range"] {
+    margin-left: 10px;
+  }
+  
+  .seekbar,.volume-seekbar {
+    -webkit-appearance: none;
+    width: 90%;
+    margin-right: 15px;
+    background: #444;
+    padding: 0px 0;
+    cursor: pointer;
+  }
+  
+  .seekbar::-webkit-slider-thumb,.volume-seekbar::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .fullSeekbar{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    padding-left: 32px;
+  }
+
+  .fullscreen-controls {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 15px;
+  }
+  
+  .fullscreen-seekbar {
+    position: absolute;
+    bottom: 7px;
+    left: 15px;
+    right: 15px;
+    width: calc(100% - 30px);
+  }
+  
+  .fullscreen-controls button,
+  .fullscreen-seekbar input {
+    font-size: 18px;
+  }
+  
+  .fullscreen-controls .volume-control input[type="range"],
+  .fullscreen-seekbar {
+    width: 80%;
+  }
+  
+
+
+  /* Responsive Styling */
+@media (max-width: 880px) {
+  .controls {
+    /* padding-right: 0; */
+    padding-left: 10px; /* Reduced padding for small screens */
+  }
+
+  .seekbar, .volume-seekbar {
+    width: 80%; /* Make seekbars smaller for smaller screens */
+  }
+
+  .playbackAndVolume {
+    gap: 20px; /* Reduce gap between volume and playback controls */
+  }
+
+  .playbackAndTimer {
+    gap: 8px; /* Reduce gap between playback speed and timer */
+  }
+
+  .timer {
+    font-size: 12px; /* Make timer font smaller */
+  }
+
+  .video-player-container {
+    height: auto; /* Adjust video player height for smaller screens */
+  }
+
+  .playback-controls button {
+    font-size: 16px; /* Reduce button size for small screens */
+  }
+
+  .fullSeekbar {
+    padding-left: 10px; /* Reduce padding on full seekbar */
+  }
+}
+
+/* Further customization for smaller devices (optional) */
+@media (max-width: 480px) {
+  .controls {
+    flex-direction: column; /* Stack the controls vertically */
+    align-items: flex-start; /* Align items to the left */
+  }
+
+  .seekbar {
+    width: 100%; /* Make the seekbar take the full width */
+  }
+
+  .playbackAndVolume, .playbackAndTimer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px; /* Reduce gap when stacked */
+  }
+
+  .volume-control input[type="range"] {
+    width: 70%; /* Reduce the volume control width */
+  }
+}
+
+
+
+  
