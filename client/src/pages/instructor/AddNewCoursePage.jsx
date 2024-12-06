@@ -1,5 +1,5 @@
 import React, { useState,useContext, useEffect } from 'react';
-import './AddNewCourse.css';
+import './AddnewCourse.css';
 import Curriculum from '../../components/instructor-view/courses/add-new-course/course-curriculam';
 import CourseLandingPage from '../../components/instructor-view/courses/add-new-course/course-landing-page';
 import Settings from '../../components/instructor-view/courses/add-new-course/course-settings';
