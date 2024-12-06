@@ -13,7 +13,7 @@ import StudentViewCourseDetailsPage from './components/student-view/course-detai
 import PaypalPaymentReturnPage from './components/student-view/payment-return';
 import StudentCoursesPage from './components/student-view/student-courses';
 import StudentViewCourseProgressPage from './pages/course-progress-page';
-import FAQ from './pages/student-view/Faq';
+import FAQ from './pages/student-view/FAQ';
 import AboutUs from './pages/student-view/About';
 import ContactUs from './pages/student-view/ContactUs';
 
