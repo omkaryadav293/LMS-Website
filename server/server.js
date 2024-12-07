@@ -33,8 +33,9 @@ app.use(express.json());
 
 
 //routes  configuration
-
-
+app.get("/", (req, res) => {
+    res.send("Backend is working!");
+  });
 
 app.use('/signup', signupRoutes);  // Handles `/signup/register`
 app.use('/login', loginRoutes);     // Handles `/login`
