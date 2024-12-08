@@ -4,6 +4,7 @@ import "./auth.css";
 import { useNavigate } from "react-router-dom";
 import { LiaPlaystation } from "react-icons/lia";
 import { FaArrowLeftLong } from "react-icons/fa6";
+
 export default function Signup() {
   const navigate = useNavigate();
   const { SignupFormData, setSignupFormData, handleRegisterUser } =

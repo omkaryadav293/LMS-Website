@@ -27,6 +27,8 @@ const App = () => {
       authenticated = {authToken.authenticate} 
       user={authToken?.user}
        />} />
+    
+     
      <Route path="/signup" element={<Signup/>} />
 
      <Route path="/instructor" element={
