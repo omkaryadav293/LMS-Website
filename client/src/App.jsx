@@ -20,7 +20,7 @@ import ContactUs from './pages/student-view/ContactUs';
 const App = () => {
   const {authToken} = useContext(AuthContext);
   return (
-    <Router>
+    
     <Routes>
      <Route path="/login" element={
       <RouteGuard
@@ -68,7 +68,7 @@ const App = () => {
      <Route path="*" element={<NotFound/>}/>
      
     </Routes>
-    </Router>
+   
 
   )
 }
