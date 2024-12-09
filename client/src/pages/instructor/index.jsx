@@ -4,14 +4,15 @@ import InstructorDashboard from "../../components/instructor-view/dashboard";
 import InstructorCourses from "../../components/instructor-view/courses/index";
 import { InstructorContext } from "../../context/instructor-context";
 import { fetchInstructorCourselistService } from "../../services";
+import { useNavigate } from "react-router-dom";
 
 export default function InstructorPage() {
+  const navigate = useNavigate();
   const [selectedItem, setSelectedItem] = useState("dashboard");
   const {instructorCoursesList, setInstructorCoursesList} =useContext(InstructorContext)
   
   const fetchAllCourses  = async()=>{
      const response = await fetchInstructorCourselistService();
-     
     if(response.success) setInstructorCoursesList(response?.data);
   }
 
@@ -50,7 +51,7 @@ export default function InstructorPage() {
   const handleMenuClick = (value) => {
     if (value === "logout") {
       sessionStorage.removeItem("token");
-      window.location.href = "/login";
+     navigate("/login");
     }
     if(value === "courses"){
       setSelectedItem("courses")

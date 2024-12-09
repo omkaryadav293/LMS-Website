@@ -27,7 +27,7 @@ const Header = ({color}) => {
   const handleLogout = () => {
     sessionStorage.removeItem("token");
     setIsAuthenticated(false);
-    window.location.href = "/login";
+    navigate("/login");
     
   };
   const handleNavigate = ()=>{

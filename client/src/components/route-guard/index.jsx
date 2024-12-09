@@ -1,9 +1,9 @@
-import { Navigate, useLocation } from "react-router-dom";
+import { Navigate, useLocation, useNavigate } from "react-router-dom";
 import { Fragment } from "react";
 
 function RouteGuard({ authenticated, user, element }) {
   const location = useLocation();
-
+  const navtigate = useNavigate();
 
   if (!authenticated && !location.pathname.includes("/login")) {
     return <Navigate to="/login" />;
