@@ -22,6 +22,7 @@ const App = () => {
   return (
     
     <Routes>
+      <Route path="/signup" element={<Signup/>} />
      <Route path="/login" element={
       <RouteGuard
       element={<Login/>} 
@@ -30,7 +31,6 @@ const App = () => {
        />} />
     
      
-     <Route path="/signup" element={<Signup/>} />
 
      <Route path="/instructor" element={
      <RouteGuard 

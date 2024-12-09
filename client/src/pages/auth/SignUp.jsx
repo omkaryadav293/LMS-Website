@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 import { LiaPlaystation } from "react-icons/lia";
 import { FaArrowLeftLong } from "react-icons/fa6";
 
-export default function Signup() {
+ const Signup = ()=> {
   const navigate = useNavigate();
   const { SignupFormData, setSignupFormData, handleRegisterUser } =
     useContext(AuthContext);
@@ -86,3 +86,5 @@ export default function Signup() {
     </div>
   );
 }
+
+export default Signup;
