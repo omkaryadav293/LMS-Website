@@ -2,7 +2,7 @@
 import React, { useContext, useState } from "react";
 import { AuthContext } from "../../context/auth-context";
 import { LiaPlaystation } from "react-icons/lia";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 export default function Login() {
     const navigate = useNavigate();
@@ -54,7 +54,7 @@ export default function Login() {
                 />
                 <button type="submit">Login</button>
                 {errorMessage && <p className="error-message">{errorMessage}</p>}
-                <p>Don't have an account? <a href="/signup">Sign Up</a></p>
+                <p>Don't have an account? <Link to="/signup">Sign UP</Link></p> 
             </form>
         </div>
         
