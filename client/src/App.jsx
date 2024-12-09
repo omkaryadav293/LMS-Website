@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Router } from 'react-router-dom';
 import Login from './pages/auth/LogIn'
 import Signup from './pages/auth/SignUp';
 import { AuthContext } from './context/auth-context';
@@ -20,6 +20,7 @@ import ContactUs from './pages/student-view/ContactUs';
 const App = () => {
   const {authToken} = useContext(AuthContext);
   return (
+    <Router>
     <Routes>
      <Route path="/login" element={
       <RouteGuard
@@ -56,6 +57,7 @@ const App = () => {
      <Route path="/student-courses" element={<StudentCoursesPage/>} />
      <Route path="/course-progress/:id" element={<StudentViewCourseProgressPage/>} />
      <Route path="/" element={<StudentHomePage/>} />
+     <Route path="/home" element={<StudentHomePage/>} />
      <Route path="" element={<StudentHomePage/>}/>
      <Route path="/courses" element={<StudentViewCoursePage/>}/>
      <Route path="/contact" element={<ContactUs/>}/>
@@ -66,6 +68,7 @@ const App = () => {
      <Route path="*" element={<NotFound/>}/>
      
     </Routes>
+    </Router>
 
   )
 }
