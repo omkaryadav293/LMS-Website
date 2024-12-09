@@ -53,9 +53,13 @@ const StudentViewCourseDetailsPage = () => {
   };
 
   const handleCreatePayment = async () => {
-    if (!authToken.authenticate)
+    if (!authToken.authenticate){
       alert("You must have logged in to purchase any course");
-    setLoading(true); 
+      return;
+    }
+    setLoading(true);
+
+    
     const paymentPaylaod = {
       userId: authToken?.user?.id,
       name: authToken.user.name,
@@ -93,7 +97,7 @@ const StudentViewCourseDetailsPage = () => {
   }, [id]);
 
   if (approvalUrl !== "") {
-    window.location.href = approvalUrl;
+    navigate(approvalUrl);
   }
 
   if (!studentViewCourseDetails) return <div>Loading...</div>;
