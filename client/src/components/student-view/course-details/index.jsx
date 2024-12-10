@@ -97,7 +97,7 @@ const StudentViewCourseDetailsPage = () => {
   }, [id]);
 
   if (approvalUrl !== "") {
-    navigate(approvalUrl);
+   window.location.href = approvalUrl;
   }
 
   if (!studentViewCourseDetails) return <div>Loading...</div>;
