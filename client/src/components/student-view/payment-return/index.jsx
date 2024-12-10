@@ -2,11 +2,12 @@
 
 import React, { useEffect, useState } from 'react'
 import { LiaPlaystation } from 'react-icons/lia';
-import { useLocation } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import { captureAndFinalizePaymentService } from '../../../services';
 import Header from '../home/header';
 
 const PaypalPaymentReturnPage = () => {
+ const navigate = useNavigate();
  const location = useLocation();
  const params = new URLSearchParams(location.search);
  const paymentId = params.get("paymentId");
@@ -23,7 +24,7 @@ const PaypalPaymentReturnPage = () => {
          
             if(response.success){
                 sessionStorage.removeItem("currentOrderId");
-                window.location.href = "/student-courses"
+                navigate("/student-courses")
             }
         }
         capturePayment();
