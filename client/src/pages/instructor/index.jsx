@@ -51,7 +51,7 @@ export default function InstructorPage() {
   const handleMenuClick = (value) => {
     if (value === "logout") {
       sessionStorage.removeItem("token");
-     navigate("/login");
+      window.location.href= "/login"
     }
     if(value === "courses"){
       setSelectedItem("courses")
