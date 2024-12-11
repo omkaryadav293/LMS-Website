@@ -1,7 +1,6 @@
 .skeleton-container {
     width: 100%;
-    /* max-width: 400px; */
-    height: 100vh;
+    max-width: 400px;
     margin: 2rem auto;
     padding: 1.5rem;
     background: #fff;
