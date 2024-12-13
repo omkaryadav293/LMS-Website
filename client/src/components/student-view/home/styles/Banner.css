@@ -3,7 +3,7 @@
         rgba(0, 0, 0, 0.6),
         rgba(0, 0, 0, 0.6)
       ),
-      url("../../../../src/assets/images/banner-img.png") center/cover no-repeat;
+      url("../../../../assets/images/banner-img.png") center/cover no-repeat;
     height: 70vh;
     color: #fff;
     display: flex;
